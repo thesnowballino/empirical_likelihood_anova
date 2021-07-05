@@ -1,7 +1,7 @@
 Empirical Likelihood ANOVA.
 ==========================
 
-Written on python with the use of ``numpy`` and ``scipy``. Based on the idea of Empirical Likelihood developed by A.B. Owen.
+Written on python with the use of ``numpy`` and ``scipy``. Based on the idea of *Empirical Likelihood* developed by A.B. Owen.
 
 Example.
 -------
