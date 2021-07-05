@@ -3,8 +3,8 @@ import scipy
 from scipy.optimize import fsolve, root_scalar
 from tqdm import tqdm
 
-# realisation of Empirical Likelihood One-Way ANOVA method (the description of method can be found 
-# in the book of its creator: "Empirical Likelihood" by Art B. Owen, CHAPMAN & HALL/CRC, 2001). 
+# realisation of the Empirical Likelihood One-Way ANOVA (the description of the method can be found 
+# in the book of its author: "Empirical Likelihood" by Art B. Owen, CHAPMAN & HALL/CRC, 2001). 
 
 # utils.
 def get_samples(s, n=20, K=5, std=None):
