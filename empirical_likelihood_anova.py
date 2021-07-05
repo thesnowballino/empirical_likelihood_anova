@@ -208,7 +208,6 @@ def optimality_equations(l, X, mu):
 # main class.
 class ANOVA_EL():
     '''
-	options:
     1) run the Empirical Likelihood Ratio ANOVA test and get the (asymptotic-based) pvalue of this test.
     
     If H_0 wasn't rejected:
