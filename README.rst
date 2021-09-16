@@ -32,7 +32,7 @@ Example.
     Sum of probs:             1.000000000000325
     The solution converged.
     
-A brief explanation of this output: the output includes residual (there is a non-linear equation that we solve numerically using ``scipy``), MELE - **Maximum Empirical Likelihood Estimator** of the commom mean. Actually, the test builds a distribution on our samples: so there is probability attached to every value of the sample. We can check if the distribution that we've got is really a distribution (attached probabilities is positive and sums to 1).
+A brief explanation of this output: the output includes residual (there is a non-linear equation that we solve numerically using ``scipy``), MELE - **Maximum Empirical Likelihood Estimator** of the common mean. Actually, the test builds a distribution on our samples: so there is probability attached to every value of the sample. We can check if the distribution that we've got is really a distribution (attached probabilities is positive and sums to 1).
 
 After ``fit()`` method you can print some things:
 
