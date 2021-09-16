@@ -20,8 +20,21 @@ Example.
     X = [scipy.stats.norm.rvs(size=n[i]) for i in range(K)] # a list of numpy arrays with shapes (n_i, ) 
     
     anova.fit(X, verbose=True)
+    
+``fit()`` method will produce some output if ``verbose=True``:
 
-After ``fit()`` method you are able to print some things:
+.. code:: python
+
+    Residual on call 50:      5.5550491452876355e-11
+    Opt. Lagrange mult.:      [ 14.219972 -45.204419  15.579331   4.386927 -10.824406]
+    MELE:                     0.24332965083488042
+    Probs is positive:        True
+    Sum of probs:             1.000000000000325
+    The solution converged.
+    
+A brief explanation of this output: the output includes residual (there is a non-linear equation that we solve numerically using ``scipy``), MELE - **Maximum Empirical Likelihood Estimator** of the commom mean. Actually, the test builds a distribution on our samples: so there is probability attached to every value of the sample. We can check if the distribution that we've got is really a distribution (attached probabilities is positive and sums to 1).
+
+After ``fit()`` method you can print some things:
 
 .. code:: python
 
