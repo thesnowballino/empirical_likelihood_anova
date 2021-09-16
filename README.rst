@@ -34,7 +34,7 @@ Example.
     
 A brief explanation of this output: the output includes residual (there is a non-linear equation that we solve numerically using ``scipy``), MELE - **Maximum Empirical Likelihood Estimator** of the common mean. Actually, the test builds a distribution on our samples: so there is probability attached to every value of the sample. We can check if the distribution that we've got is really a distribution (attached probabilities is positive and sums to 1).
 
-After ``fit()`` method you can print some things:
+After ``fit()`` method you can print some things...
 
 .. code:: python
 
@@ -42,3 +42,9 @@ After ``fit()`` method you can print some things:
     print(anova.pvalue) # the pvalue of the test.
     print(anova.l)      # optimal Lagrange Multipliers.
     print(anova.MELE)   # Maximum (Empirical) Likelihood Estimator of the common mean.
+ 
+... and find the confidence interval for the common mean (if the test hasn't rejected H_0 hypothesis).
+
+.. code:: python
+    
+    anova.confidence_interval(X)
