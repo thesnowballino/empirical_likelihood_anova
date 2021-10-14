@@ -17,7 +17,7 @@ Example.
     n = [50, 20, 20, 10, 15]
     K = 5
     
-    X = [scipy.stats.norm.rvs(size=n[i]) for i in range(K)] # a list of numpy arrays with shapes (n_i, ) 
+    X = [scipy.stats.norm.rvs(size=n[i]) for i in range(K)] # a list of numpy arrays with shapes (n_i, )
     
     anova.fit(X, verbose=True)
     
